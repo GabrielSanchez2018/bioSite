@@ -1,0 +1,98 @@
+html{
+    
+}
+
+.column {
+    float: left;
+    width: 650px;
+    margin: 10px;
+}
+
+#wrapper { 
+    font-size: 1.414em;
+    margin-left:auto;
+    margin-right: auto;
+    width: 90%;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    font-family: 'Poiret One', cursive;
+    border= 5px;
+    background-color: whitesmoke;
+    color: black;
+    margin-top: 20px;
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
+    margin: 10px;
+    font-size: 1.999em;
+}
+.Avatar {
+    border-radius: 50%;
+    margin: 30px;
+    
+}
+.paragraph {
+    border-width: 1px 4px 12px 4px;
+    margin: 20px;
+}
+.imamary{
+    margin-left: auto;
+    margin-right:auto;
+    float: center;
+    width: 70%;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(103, 144, 140, 1);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.999em;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:rgb(130, 144, 144);
+}
+
+.column {
+    padding-top: 10px;
+    margin: 15px;
+    float: left;
+    width: 45%;
+    padding: 10px;
+    height: 400px;
+    background-color: rgba(202,238,252, 1);
+    
+    
+    
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+article {
+    column-count: 1;
+}
+figcaption {
+    font-family: 'Poiret One', cursive;
+    font-size: 1.414em;
+    list-style-position: inside;
+    
+}
