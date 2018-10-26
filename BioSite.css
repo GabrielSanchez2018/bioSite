@@ -1,7 +1,10 @@
 html{
-    
+    background-color: whitesmoke;
+    width: 100%;
 }
-
+* {
+    box-sizing: border-box;
+}
 .column {
     float: left;
     width: 650px;
@@ -16,18 +19,34 @@ html{
     padding-right: 0px;
     padding-top: 10px;
     padding-bottom: 20px;
-    border-radius: 15px;
+    border-radius: 0px;
     font-family: 'Poiret One', cursive;
     border= 5px;
-    background-color: whitesmoke;
+    background-color: white;
     color: black;
     margin-top: 20px;
 }
+
 h1 {
     font-family: 'Dancing Script', cursive;
     margin: 10px;
-    font-size: 1.999em;
+    font-size: 1.499em;
+    color: rgba(255,192,203, 1) ;
+    margin-left: 20px;
 }
+h3 {
+    font-family: 'Dancing Script', cursive;
+    color: rgba(255,192,203, 1) ;
+    margin-left: 20px;
+}
+.avatarparagraph{
+    font-family: 'Poiret One', cursive; /*'Ubuntu Condensed', sans-serif;*/
+    margin: 10px;
+    font-size: 1.1em;
+    color: black;
+    
+}
+
 .Avatar {
     border-radius: 50%;
     margin: 30px;
@@ -35,7 +54,11 @@ h1 {
 }
 .paragraph {
     border-width: 1px 4px 12px 4px;
-    margin: 20px;
+    margin-right: 20px;
+    padding-left: 15px;
+    display: block;
+   
+    
 }
 .imamary{
     margin-left: auto;
@@ -49,7 +72,11 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(103, 144, 140, 1);
+    background-color: white;
+    top: 0;
+    width: 100%;
+    
+    
 }
 
 li {
@@ -60,10 +87,12 @@ li a {
     font-family: 'Dancing Script', cursive;
     font-size: 1.999em;
     display: block;
-    color: white;
+    color: rgba(255,192,203, 1) ;
     text-align: center;
-    padding: 30px 16px;
+    padding: 20px 16px;
     text-decoration: none;
+    
+    
 }
 
 li a:hover {
@@ -76,23 +105,79 @@ li a:hover {
     float: left;
     width: 45%;
     padding: 10px;
-    height: 400px;
-    background-color: rgba(202,238,252, 1);
-    
-    
+    height: 400px;   
     
 }
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 article {
     column-count: 1;
+    padding-left: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    
 }
 figcaption {
     font-family: 'Poiret One', cursive;
     font-size: 1.414em;
     list-style-position: inside;
     
+}
+.column {
+    float: middle;
+    width: 33.3%;
+    padding: 5px;
+   
+    
+}
+
+footer {
+    clear: both;
+    padding-top: 100px;
+    margin-top: 10px;
+    background-color: white;
+}
+.sidebar{
+    float: left;
+    margin: 10px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.picturebox {
+    margin-left: 61px;
+    margin-top: 15px;
+    padding-left: 50px;
+    padding-top: 15px;
+    width: 25%;
+    height: 500px;
+    background-color:white;
+    list-style-image: inside;
+    float: left;
+    padding-bottom: 5px;
+    
+}
+.pictureone {
+    padding: middle;
+    width: 80%;
+    padding-top: 15px;
+    
+}
+
+.picturetwo {
+    padding-top: 14px;
+    float: middle;
+    clear: both;
+    width: 80%;
+    
+}
+.picturethree {
+    padding-top: 15px;
+    float: middle;
+    clear: both;
+    width: 80%;
+}
+body {
+    padding: 15px;
 }
