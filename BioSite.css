@@ -12,7 +12,7 @@ html{
     margin-right: auto;
     width: 90%;
     padding-right: 0px;
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 20px;
     border-radius: 0px;
     font-family: 'Poiret One', cursive;
@@ -70,7 +70,8 @@ ul {
     background-color: black;
     top: 0;
     width: 100%;
-    
+    position: fixed;
+    margin-bottom: -150px;
     
 }
 
@@ -162,18 +163,210 @@ figcaption {
 body {
     padding: 15px;
 }
+/*footeer*/
 footer {
     clear: both;
     padding-top: 10px;
     margin-top: 10px;
-    background-color: white;
-    font-family: 'Dancing Script', cursive;
+    background-color: black;
+    font-family: 'Poiret One', monospace;
+    text-align: center;
+    color: white;
+}
+/*Icons*/
+.facebookicon,.tweetericon, .instagramicon{
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    float: center;
+    clear:none;
+    margin-left: 10px;  
+}
+.facebookicon:hover {
+    opacity: 0.7; 
+}
+.tweetericon:hover{
+    opacity: 0.7;
+}
+.instagramicon:hover{
+    opacity: 0.7;
+}
+.location:hover{
+    opacity: 0.7;
+}
+.location {
+    width: 50px;
+    height: 50px;
+    float: center;
+    clear: none;
+    margin-right: 10px;
+}
+address {
+    padding-left: 80%;
+    
+    
+}
+/*Page2 CSS*/
+/* FIRST IMAGE WITH TEXT */
+
+.container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+    
+}
+.bgimage {
+	width: 100%;
+	height: 100%;
+	margin-top: 2px;
+	opacity: ;
+}
+.text-block {
+	position: absolute;
+	top: 20%;
+	left: 50px;
+	color: red;
+    width: 100%;
+    height: auto;
+}
+.imagetext {
+	color: white;
+	font-weight: 400;
+	font-size: 300%;
+	font-family: 'Poiret One', cursive;
+	background-color: rgba(29, 6, 6, 0.2);
+    width: 50%;
+}
+/* SECOND BOX */
+
+.text-block2 {
+	width: 50%;
+	position: absolute;
+	top: 55%;
+	left: 20%;
+	color: white;
+	background-color: rgba(29, 6, 6, 0.4);
+}
+.imagetext2 {
+	color: ghostwhite;
+	font-weight: bolder;
+	font-size: 90px;
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+}
+/*2container2*/
+.secondcontainer {
+    width: 80%;
+    height: 300px;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    color: plum;
+}
+.secondcontainertext{
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: purple;
+}
+.list {
+    color: purple;
+    background-color: none;
+    list-style: circle;
+    font-family: 'Poiret One', cursive;
+    text-align: left;
+    clear: both;
+    width: 500px;
+    height: auto;
+}
+/*Container for the divs with images */
+
+.mainContainer {
+	width: 700px;
+	width: 500px;
+	background-color: black;
+}
+/* image 1 after the big picture We need 
+Container class/ relative , image class, text-box/absolute class*/
+
+.container1 {
+	width: 47%;
+	height: 50%;
+	position: relative;
+	/* This puts the text container insde the picture */
+	float: left;
+	margin-right: 15px;
+	margin-top: 2px;
+	margin-left: 4px;
+}
+.image1 {
+	padding-top: 2px;
+	width: 100%;
+	height: 100%;
+}
+.text-block3 {
+	width: 500px;
+	position: absolute;
+	bottom: 11px;
+	left: 40px;
+	color: white;
+	background-color: rgba(29, 6, 6, 0.1);
+	font-family: 'Poiret One', cursive;
+}
+.text-blockfont3 {
+	font-family: 'Poiret One', cursive;
+	font-size: 70px;
+}
+/*image 2*/
+
+.container2 {
+	width: 47%;
+	height: 50%;
+	position: relative;
+	/* This puts the text container insde the picture */
+	float: left;
+	margin-left: 1%;
+}
+.image2 {
+	padding-top: 4px;
+	width: 100%;
+	height: 100%;
+}
+.text-block4 {
+	width: 40%;
+	position: relative;
+	top: -210px;
+	left: 200px;
+	color: white;
+	background-color: rgba(29, 6, 6, 0.4);
+	text-align: center;
+	font-size: 70px;
+}
+
+/* Page 3 Pictures */
+.containerpage3{
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 150px;
+    width: 80%;
+    height: 500px;
+    background-color: rgba(255,192,203, 0.8) ;
+    color: white;
+    font-family: 'Poiret One', monospace;
+    font-weight: 600;
+    float: center;
+    background-image: image("Pictures/makeup2.jpg");
+}
+.fieldsetclass {
+    width: 210px;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page3text {
+    color: white;
+    font-family: 'Poiret One' , monospace;
     text-align: center;
 }
 
-/* Page 2 Pictures */
-.backgroundpic {
-    width: 100%;
-    height: 100%;
-    
-}
