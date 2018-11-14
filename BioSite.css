@@ -95,6 +95,8 @@ li a {
 
 li a:hover {
     color: rgba(255, 192, 203, 1);
+    border-bottom: 1px dotted pink;
+    padding-bottom: 5px;
 }
 
 .leftheader {
