@@ -11,10 +11,11 @@ html {
 	padding-bottom: 20px;
 	border-radius: 15px;
 	font-family: 'Poiret One', cursive;
-	border=5px;
+	border:5px;
 	background-color: whitesmoke;
 	color: black;
 	margin-top: 20px;
+    border-bottom: 1px solid burlywood;
 }
 
 .paragraph {
@@ -24,7 +25,6 @@ html {
 .imamary {
 	margin-left: auto;
 	margin-right: auto;
-	float: center;
 	width: 70%;
 }
 
@@ -33,18 +33,42 @@ html {
 
 
 
-/*header elements*/
+/*******Navigation / header elements*/
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: white;
     top: 0;
     width: 100%;
     margin-bottom: 10px;
     clear: both;
+    position: fixed;
+    z-index: 99; /* add this function to place the header on top of everything.*/
+    margin-bottom: -150px;
+    border-bottom: 1px solid burlywood;
     
+    
+    
+}
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    margin-bottom: -150px;
+    border-bottom: 1px solid burlywood;
+
+} */
+.leftheader {
+    float: right;
+    margin-right: 50px;
 }
 li {
 	float: left;
@@ -53,21 +77,15 @@ li a {
 	font-family: 'Dancing Script', cursive;
 	font-size: 1.999em;
 	display: block;
-	color: rgba(255, 192, 203, 1);
+	color: burlywood;
 	text-align: center;
 	padding: 30px 16px;
 	text-decoration: none;
 }
 li a:hover {
-	background-color: rgb(130, 144, 144);
+    color: rgba(255, 192, 203, 1);
 }
-h1 {
-	font-family: 'Dancing Script', cursive;
-	margin: 10px;
-	font-size: 1.499em;
-	color: white;
-	margin-left: 20px;
-}
+
 
 /* FIRST IMAGE WITH TEXT */
 
@@ -75,72 +93,166 @@ h1 {
 	width: 100%;
 	height: 100%;
 	position: relative;
+    padding-top: 90px;
+    background-image: url(../Pictures/board-bright-design-235994.jpg);
     
 }
 .bgimage {
 	width: 100%;
 	height: 100%;
 	margin-top: 2px;
-	opacity: ;
+	opacity: 1;
+    background-color: black;
 }
+#Container_Text1 {
+    font-size: 300%;
+    text-align: center;
+    font-family:'Anton', sans-serif;
+    color: burlywood;
+}
+#Container_Text2 {
+    font-size: 200%;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: pink;
+    margin-top: -50px;
+    margin-left: 100px;
+}
+#Container_Text3 {
+    font-size: 300%;
+    text-align: center;
+    font-family:'Anton', sans-serif;
+    color: burlywood;
+}
+/********************MaryKay Container***********/
+.marykay_container {
+    width: 80%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    padding-top: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.mary_pic {
+    width: 30%;
+    height: auto;
+    padding-left: 40px;
+    min-width: 200px;
+    border-right: 1px solid burlywood;
+    padding-right: 25px;
+}
+.marykay_containertext {
+    font-family: 'Poiret One', cursive;
+    font-weight: 500;
+    font-size: 25px;
+    width: 35%;
+    height: auto;
+    color: black;
+    float: right;
+    background-color: white;
+    margin-right: 100px;
+    margin-top: 50px;
+    
+    
+}
+
+/****
 .text-block {
 	position: absolute;
-	top: 20%;
+	top: 15%;
 	left: 50px;
-	color: red;
-    width: 100%;
+	color: black;
+    width: 50%;
     height: auto;
+    background-color: none;
+    
+}
+h1 {
+	font-family:'Poiret One', cursive;
+	margin: 10px;
+	font-size: 1.499em;
+	color: white;
+	margin-left: 20px;
+    background-color: none;
 }
 .imagetext {
 	color: white;
-	font-weight: 400;
+	font-weight: 11000;
 	font-size: 300%;
 	font-family: 'Poiret One', cursive;
-	background-color: rgba(29, 6, 6, 0.2);
-    width: 50%;
+	background-color: rgba(29, 6, 6, .0);
+    width: 70%;
 }
+*****/
 /* SECOND BOX */
 
 .text-block2 {
-	width: 50%;
+	width:40%;
 	position: absolute;
-	top: 55%;
-	left: 20%;
+    margin-left: auto;
+    margin-right: auto;
+	top: 35%;
+	left: 10%;
 	color: white;
-	background-color: rgba(29, 6, 6, 0.4);
+	background-color: rgba(29, 6, 6, 0);
 }
 .imagetext2 {
-	color: ghostwhite;
+	color: white;
 	font-weight: bolder;
 	font-size: 90px;
 	font-family: 'Poiret One', cursive;
 	text-align: center;
+    font-weight: bolder;
 }
+.imagetext3{
+    color: pink;
+    text-align: center;
+    padding-bottom: 0px;
+    position: absolute;
+    top: 160px;
+    left: 80%;
+    font-family: 'Poiret One', cursive;
+}
+
 /*2container2*/
 .secondcontainer {
+    margin-top: 25px;
     width: 80%;
-    height: 300px;
-    background-color: whitesmoke;
+    height: auto;
+    background-color: white;
     opacity: 0.8;
     margin-left: auto;
     margin-right: auto;
     color: plum;
+    border-top: 1px solid burlywood;
+    clear: both;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    overflow: hidden;
 }
-.secondcontainertext{
+#secondcontainertext{
+    width: auto;
     font-family: 'Poiret One', cursive;
     text-align: center;
-    font-size: 30px;
+    font-size: 300%;
     color: purple;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    background-color: white;
 }
 .list {
+    font-size: 150%;
     color: purple;
-    background-color: none;
+    background-color: white;
     list-style: circle;
     font-family: 'Poiret One', cursive;
     text-align: left;
     clear: both;
     width: 500px;
     height: auto;
+    padding-bottom: 25px;
 }
 /*Container for the divs with images */
 
@@ -205,24 +317,56 @@ Container class/ relative , image class, text-box/absolute class*/
 	text-align: center;
 	font-size: 70px;
 }
+/********************Container with images*****/
+.Container_photos {
+    width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: white;
+    align-content: center;
+    border-top: 1px solid burlywood;
+    margin-top: 55px;
+    padding-bottom: 15px;
+    padding-top: 50px;
+    clear: both;
+    
+}
+.First_pic, .Second_pic, .Third_pic {
+    padding-top: 15px;
+    padding-left: 2%;
+    width: 30%
+    
+}
 /*footeer*/
 footer {
     clear: both;
     padding-top: 10px;
     margin-top: 10px;
-    background-color: black;
+    background-color: white;
     font-family: 'Poiret One', cursive;
     text-align: center;
     color: white;
+    border-top: 1px solid burlywood;
 }
 /*Icons*/
 .facebookicon,.tweetericon, .instagramicon{
     margin-top: 15px;
     width: 50px;
     height: 50px;
-    float: center;
     clear:none;
     margin-left: 10px;  
+}
+.big_A {
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    clear: none;
+    float: left;
+    margin-left: 20px;
+    border-right: 1px solid burlywood;
+    padding-right: 2px;
 }
 .facebookicon:hover {
     opacity: 0.7; 
@@ -239,16 +383,12 @@ footer {
 .location {
     width: 50px;
     height: 50px;
-    float: center;
     clear: none;
     margin-right: 10px;
 }
 address {
-	text-align: center;
     padding-left: 80%;
-	
     
     
 }
 
-/* Page 2 Pictures */

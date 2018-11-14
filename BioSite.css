@@ -1,16 +1,18 @@
-html{
-    background-color: whitesmoke;
+html {
+    background-color: white;
     width: 100%;
 }
+
 * {
     box-sizing: border-box;
 }
 
-#wrapper { 
+#wrapper {
     font-size: 1.414em;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
     width: 90%;
+    height: auto;
     padding-right: 0px;
     padding-top: 50px;
     padding-bottom: 20px;
@@ -21,58 +23,60 @@ html{
     color: black;
     margin-top: 20px;
     clear: both;
+    max-width: 1100px;
+    border-bottom: 1px solid burlywood;
 }
 
 h1 {
     font-family: 'Dancing Script', cursive;
     margin: 10px;
     font-size: 1.499em;
-    color: rgba(255,192,203, 1) ;
+    color: burlywood;
     margin-left: 20px;
-}
-h3 {
-    font-family: 'Dancing Script', cursive;
-    color: rgba(255,192,203, 1) ;
-    margin-left: 20px;
-}
-.avatarparagraph{
-    font-family: 'Poiret One', cursive; /*'Ubuntu Condensed', sans-serif;*/
-    margin: 10px;
-    font-size: 1.1em;
-    color: black;
-    
 }
 
-.Avatar {
-    border-radius: 50%;
-    margin: 30px;   
+h3 {
+    font-family: 'Dancing Script', cursive;
+    color: rgba(255, 192, 203, 1);
+    margin-left: 20px;
 }
+
+.avatarparagraph {
+    font-family: 'Poiret One', cursive;
+    /*'Ubuntu Condensed', sans-serif;*/
+    margin: 10px;
+    font-size: 1.1em;
+    color: pink;
+}
+
 .paragraph {
     border-width: 1px 4px 12px 4px;
     margin-right: 20px;
     padding-left: 15px;
     display: block;
     float: right;
-    width: 70%;  
-}
-.imamary{
-    margin-left: auto;
-    margin-right:auto;
-    float: middle;
     width: 70%;
-    
 }
+
+.imamary {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/*****************Navigation************/
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: white;
     top: 0;
     width: 100%;
     position: fixed;
     margin-bottom: -150px;
-    
+    border-bottom: 1px solid burlywood;
 }
 
 li {
@@ -83,15 +87,63 @@ li a {
     font-family: 'Dancing Script', cursive;
     font-size: 1.999em;
     display: block;
-    color: rgba(255,192,203, 1) ;
+    color: burlywood;
     text-align: center;
     padding: 20px 16px;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 li a:hover {
-    background-color:rgb(130, 144, 144);
+    color: rgba(255, 192, 203, 1);
 }
+
+.leftheader {
+    float: right;
+    margin-right: 50px;
+}
+
+/***********************************/
+
+/**********Side_Bar-inside-wrapper*******/
+
+.sidebar {
+    width: 25%;
+    min-width: 100px;
+    height: auto;
+    float: left;
+    margin: 10px;
+    margin-top: 20px;
+    background-color: white;
+    clear: both;
+    border-right: 1px solid burlywood;
+}
+
+.Avatar_pic {
+    border-radius: 50%;
+    margin: 30px;
+    min-width: 50px;
+}
+
+.sidebar_text {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    margin: 10px;
+    font-size: 1.499em;
+    color: burlywood;
+    margin-left: 20px;
+}
+
+article {
+    font-weight: 500;
+    column-count: 1;
+    padding-left: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+}
+
+/***********************************/
 
 .column {
     padding-top: 10px;
@@ -99,274 +151,195 @@ li a:hover {
     float: left;
     width: 45%;
     padding: 10px;
-    height: 400px;   
-    
+    height: 400px;
 }
 
-article {
-    column-count: 1;
-    padding-left: 20px;
-    margin-right: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: white; 
-}
 figcaption {
     font-family: 'Poiret One', cursive;
     font-size: 1.414em;
     align-content: center;
-    text-align: center;   
+    text-align: center;
 }
+
 .column {
-    float: middle;
     width: 33.3%;
     padding: 5px;
-   
-    
 }
 
+/*** Container2*******************
+****/
 
-.sidebar{
-    float: left;
-    margin: 10px;
-    margin-top: 20px;
-    background-color: white;
-}
-
-
-
-.imagebox, .imagebox2, .imagebox3 {
-    width: 300px;
-    height: 600px;
-    background-color: white;
-    float: left;
-    margin: 1%;
-    margin-left: 5.8%;
-    
-    
-    
-}
-.pictureone, .picturetwo, .picture3{
+.container2 {
     width: 80%;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 25px;
-    border: 10px;
-    content: inside;
-    margin-left: 15%;
-    
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    background-color: white;
 }
 
+.pictureone, .picturetwo, .picture3 {
+    width: 30%;
+    height: 30%;
+    min-width: 200px;
+    min-height: auto;
+    margin-left: 2%;
+    margin-top: 2%;
 }
 
+/*******Container 3*************/
+
+.container3 {
+    background-color: white;
+    width: 80%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid burlywood;
+}
+
+.Container3_text {
+    background-color: white;
+    width: 70%;
+    height: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Anton', sans-serif;
+    text-align: left;
+    color: burlywood;
+    font-size: 200%
+}
+
+.Container3_text2 {
+    background-color: white;
+    width: 70%;
+    height: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Anton', sans-serif;
+    text-align: left;
+    color: burlywood;
+    font-size: 150%
+}
+
+.Container3_textbox {
+    width: 60%;
+    height: auto;
+    background-color: white;
+    float: right;
+    padding-top: 10px;
+    padding-right: 35px;
+    padding-left: 6px;
+    font-family: 'Poiret One', monospace;
+    font-size: 130%;
+}
+
+.Universidad {
+    background-color: white;
+    border-right: 3px double burlywood;
+}
 
 body {
     padding: 15px;
 }
+
+/**********************/
+
 /*footeer*/
+
 footer {
     clear: both;
     padding-top: 10px;
     margin-top: 10px;
-    background-color: black;
+    background-color: white;
     font-family: 'Poiret One', monospace;
     text-align: center;
     color: white;
+    border-top: 1px solid burlywood;
 }
+
 /*Icons*/
-.facebookicon,.tweetericon, .instagramicon{
+
+.facebookicon, .tweetericon, .instagramicon {
     margin-top: 15px;
     width: 50px;
     height: 50px;
-    float: center;
-    clear:none;
-    margin-left: 10px;  
+    clear: none;
+    margin-left: 10px;
 }
+
+.big_A {
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    clear: none;
+    float: left;
+    margin-left: 20px;
+    border-right: 1px solid burlywood;
+    padding-right: 2px;
+}
+
 .facebookicon:hover {
-    opacity: 0.7; 
-}
-.tweetericon:hover{
     opacity: 0.7;
 }
-.instagramicon:hover{
+
+.tweetericon:hover {
     opacity: 0.7;
 }
-.location:hover{
+
+.instagramicon:hover {
     opacity: 0.7;
 }
+
+.location:hover {
+    opacity: 0.7;
+}
+
 .location {
     width: 50px;
     height: 50px;
-    float: center;
     clear: none;
     margin-right: 10px;
 }
+
 address {
     padding-left: 80%;
-    
-    
-}
-/*Page2 CSS*/
-/* FIRST IMAGE WITH TEXT */
-
-.container {
-	width: 100%;
-	height: 100%;
-	position: relative;
-    
-}
-.bgimage {
-	width: 100%;
-	height: 100%;
-	margin-top: 2px;
-	opacity: ;
-}
-.text-block {
-	position: absolute;
-	top: 20%;
-	left: 50px;
-	color: red;
-    width: 100%;
-    height: auto;
-}
-.imagetext {
-	color: white;
-	font-weight: 400;
-	font-size: 300%;
-	font-family: 'Poiret One', cursive;
-	background-color: rgba(29, 6, 6, 0.2);
-    width: 50%;
-}
-/* SECOND BOX */
-
-.text-block2 {
-	width: 50%;
-	position: absolute;
-	top: 55%;
-	left: 20%;
-	color: white;
-	background-color: rgba(29, 6, 6, 0.4);
-}
-.imagetext2 {
-	color: ghostwhite;
-	font-weight: bolder;
-	font-size: 90px;
-	font-family: 'Poiret One', cursive;
-	text-align: center;
-}
-/*2container2*/
-.secondcontainer {
-    width: 80%;
-    height: 300px;
-    background-color: whitesmoke;
-    opacity: 0.8;
-    margin-left: auto;
-    margin-right: auto;
-    color: plum;
-}
-.secondcontainertext{
-    font-family: 'Poiret One', cursive;
-    text-align: center;
-    font-size: 30px;
-    color: purple;
-}
-.list {
-    color: purple;
-    background-color: none;
-    list-style: circle;
-    font-family: 'Poiret One', cursive;
-    text-align: left;
-    clear: both;
-    width: 500px;
-    height: auto;
-}
-/*Container for the divs with images */
-
-.mainContainer {
-	width: 700px;
-	width: 500px;
-	background-color: black;
-}
-/* image 1 after the big picture We need 
-Container class/ relative , image class, text-box/absolute class*/
-
-.container1 {
-	width: 47%;
-	height: 50%;
-	position: relative;
-	/* This puts the text container insde the picture */
-	float: left;
-	margin-right: 15px;
-	margin-top: 2px;
-	margin-left: 4px;
-}
-.image1 {
-	padding-top: 2px;
-	width: 100%;
-	height: 100%;
-}
-.text-block3 {
-	width: 500px;
-	position: absolute;
-	bottom: 11px;
-	left: 40px;
-	color: white;
-	background-color: rgba(29, 6, 6, 0.1);
-	font-family: 'Poiret One', cursive;
-}
-.text-blockfont3 {
-	font-family: 'Poiret One', cursive;
-	font-size: 70px;
-}
-/*image 2*/
-
-.container2 {
-	width: 47%;
-	height: 50%;
-	position: relative;
-	/* This puts the text container insde the picture */
-	float: left;
-	margin-left: 1%;
-}
-.image2 {
-	padding-top: 4px;
-	width: 100%;
-	height: 100%;
-}
-.text-block4 {
-	width: 40%;
-	position: relative;
-	top: -210px;
-	left: 200px;
-	color: white;
-	background-color: rgba(29, 6, 6, 0.4);
-	text-align: center;
-	font-size: 70px;
 }
 
 /* Page 3 Pictures */
-.containerpage3{
+
+.containerpage3 {
     margin-right: auto;
     margin-left: auto;
     padding-top: 150px;
     width: 80%;
     height: 500px;
-    background-color: rgba(255,192,203, 0.8) ;
-    color: white;
+    background-color: white;
+    color: burlywood;
     font-family: 'Poiret One', monospace;
     font-weight: 600;
-    float: center;
-    background-image: image("Pictures/makeup2.jpg");
 }
+
 .fieldsetclass {
-    width: 210px;
-    float: center;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .page3text {
-    color: white;
-    font-family: 'Poiret One' , monospace;
+    color: burlywood;
+    font-family: 'Poiret One', monospace;
     text-align: center;
 }
 
+.submit_button_id {
+    color: white;
+    margin-top: 15px;
+    background-color: burlywood;
+    width: auto;
+    height: auto;
+    font-family: 'Poiret One', monospace;
+    
+}
