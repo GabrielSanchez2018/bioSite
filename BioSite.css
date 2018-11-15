@@ -317,7 +317,7 @@ address {
     margin-left: auto;
     padding-top: 150px;
     width: 80%;
-    height: 500px;
+    height: auto;
     background-color: white;
     color: burlywood;
     font-family: 'Poiret One', monospace;
